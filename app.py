@@ -20,7 +20,7 @@ def main():
     driver = webdriver.Chrome(options=set_chrome_options())
     try:
         import runner
-        result = runner.main()
+        result = runner.main(driver)
     except Exception as e:
         result = e
     finally:
