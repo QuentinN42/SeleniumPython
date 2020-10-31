@@ -16,7 +16,17 @@ def set_chrome_options() -> Options:
     return chrome_options
 
 
-if __name__ == "__main__":
+def main():
     driver = webdriver.Chrome(options=set_chrome_options())
-    # Add stuff here
-    driver.close()
+    try:
+        import runner
+        result = runner.main()
+    except Exception as e:
+        result = e
+    finally:
+        driver.close()
+    return result
+
+
+if __name__ == "__main__":
+    print(main())
