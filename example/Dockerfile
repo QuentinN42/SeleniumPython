@@ -1,3 +1,3 @@
 FROM quentinn42/seleniumpython
 
-COPY . /app
+COPY my_selenium_app.py /app/runner.py
