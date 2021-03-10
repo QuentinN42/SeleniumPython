@@ -17,4 +17,3 @@ $ docker run my_app
 This project is developed under the GNU GPU v3 license, please read it before contributing.
 
 To contribute to this project, read the [contributing instructions](CONTRIBUTING.md).
-.
